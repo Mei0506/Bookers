@@ -18,13 +18,13 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 #notice {
-  font-family: verdana, arial, helvetica, sans-serif;
   color: green;
   margin: 30px;
 }
 
-body, main, h1, h2, p, ol, ul, td {
+body, main, h1, h2, p, ol, ul, td, #notice {
   font-family: verdana, arial, helvetica, sans-serif;
 }
 
@@ -59,7 +59,7 @@ th {
 }
 
 td {
-  padding-bottom: 7px:
+  padding-bottom: 7px;
   padding-left: 5px;
   padding-right: 5px;
 }
