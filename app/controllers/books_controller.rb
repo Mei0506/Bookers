@@ -12,7 +12,7 @@ class BooksController < ApplicationController
     else
       @books = Book.all
       render :index
-   end
+    end
   end
   
   def index
