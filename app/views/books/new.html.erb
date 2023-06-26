@@ -1,17 +1,25 @@
 <h2>New book</h2>
 <% if @book.errors.any? %>
- <ul><% @book.errors.full_messages.each do |message| %>
- <li><%= message %></li>
+ <ul>
+  <% @book.errors.full_messages.each do |message| %>
+ <li>
+  <%= message %>
+ </li>
  <% end %>
  </ul>
 <% end %>
 
 <%= form_with model: @book, url: '/books', method: :post do |f| %>
 <div class="field">
-<label>Title<br>
-<%= f.text_field :title %></label></div>
+ <label>Title<br>
+  <%= f.text_field :title %>
+ </label>
+</div>
+
 <div class="field">
-<label>Body<br>
-<%= f.text_area :body %></label></div>
+ <label>Body<br>
+  <%= f.text_area :body %>
+ </label>
+</div>
 <%= f.submit 'Create Book' %>
 <% end %>
